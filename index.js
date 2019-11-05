@@ -102,7 +102,8 @@ let makeMoveInGame = (moveData) => {
   playCell(game, moveData)
 
   console.log('checking for WINNER', game.board)
-
+ //actually check if move is coreect subgame
+ //if ()
   if (_.some(game.board, (board) => findWinner(board, game.turn))) {
     //check each board for a winner
     game.winner = game.turn
@@ -137,7 +138,10 @@ app.post('/move/', (req, res) => {
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 
-
+//input checking
+//persist the GAMES in sqlite
+//check if the subgame is valid_subgames
+//
 
 
 
