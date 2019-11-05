@@ -1,0 +1,8 @@
+npm install
+npm start
+
+
+ curl http://localhost:3000/move \
+    -d id:1 \
+    -d subgame: 3 \
+    -d cell: 8
